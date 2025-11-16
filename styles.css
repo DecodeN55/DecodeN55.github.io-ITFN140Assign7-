@@ -1,0 +1,276 @@
+/* General page styles */
+body {
+    background-color: #2e2e2e;  /* dark gray background */
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif; /* default Wattpad font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #2e2e2e;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #00d564; /* Webtoon lime green line */
+}
+
+header h1 {
+    color: #ff5500;  /* Wattpad orange */
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0;
+}
+
+header h2 {
+    color: #ffffff;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 5px 0 20px 0;
+}
+
+/* Navigation bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* helps wrapping for smaller screens */
+}
+
+nav ul li a {
+    color: #ff5500;  /* Wattpad orange links */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #00d564; /* Webtoon lime green on hover */
+}
+
+/* ✅ Highlight active page link */
+nav ul li a.active {
+    color: #00d564; /* Lime green highlight for the current page */
+    text-decoration: underline;
+}
+
+/* Main sections */
+main section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 900px;
+    border-bottom: 3px solid #00d564; /* Webtoon lime green line */
+}
+
+/* Section titles */
+main h2 {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #ff5500; /* Wattpad orange */
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    max-width: 100%;  /* responsive image scaling */
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    border-top: 5px solid #00d564; /* Webtoon lime green line */
+}
+
+footer a {
+    color: #ff5500; /* Wattpad orange email */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ========================= */
+/* Tablet View (up to 1024px) */
+/* ========================= */
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 15px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    main section {
+        padding: 15px;
+        max-width: 700px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================= */
+/* Mobile View (up to 600px) */
+/* ========================= */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    main section {
+        padding: 10px;
+        width: 90%;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+}
+
+/* ========================= */
+/* Contact Form Styles */
+/* ========================= */
+
+.contact-form {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 30px auto;
+    box-shadow: 0 0 10px rgba(0, 213, 100, 0.3); /* soft lime green glow */
+}
+
+.contact-form fieldset {
+    border: 2px solid #ff5500; /* Wattpad orange border */
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.contact-form legend {
+    color: #00d564; /* Webtoon lime green */
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.1rem;
+    padding: 0 10px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px 0 5px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="password"],
+.contact-form select,
+.contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #00d564;
+    border-radius: 8px;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input[type="checkbox"],
+.contact-form input[type="radio"] {
+    margin-right: 8px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #ff5500;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #00d564;
+    transform: scale(1.05);
+}
+
+/* Make form responsive */
+@media screen and (max-width: 600px) {
+    .contact-form {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="password"],
+    .contact-form select,
+    .contact-form textarea {
+        width: 100%;
+    }
+}
+
+/* Logo animation */
+
+.logo img {
+    width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 1s ease-in-out;
+}
+
+/* Hover animation: rotate full circle and return */
+.logo img:hover {
+    animation: spinLogo 1s ease-in-out;
+}
+
+/* Define the spin animation */
+@keyframes spinLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

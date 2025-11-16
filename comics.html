@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Damin Nguyen">
+    <meta name="description" content="Fanfic Folio – a creative fandom platform featuring fanfiction, comics, art, and community content. Keywords: fanfiction, comics, digital art, fandom, FIC, creative media.">
+
+
+    <title>Fanfic Folio - Comics</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Fixed size for comic images */
+        .comic-img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover; /* ensures image fills the box without stretching */
+            display: block;
+            margin: 10px auto;
+            border-radius: 8px;
+        }
+
+        .fanfic-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .fanfic-card {
+            background-color: #3e3e3e;
+            border-radius: 10px;
+            padding: 15px;
+            width: 220px; /* slightly wider to fit image + text */
+            box-sizing: border-box;
+        }
+
+        .fanfic-card h3 {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        .fanfic-card p {
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/fic_logo.png" alt="Fanfic Folio Logo" width="100">
+        </div>
+        <h1>Fanfic Folio</h1>
+        <h2>Welcome to the Fandom Community</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fanfiction.html">Fanfiction</a></li>
+                <li><a href="comics.html" class="active">Comics</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="#">Creators</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="contact.html">About / Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Comics</h2>
+            <p>Explore fan-created comics and alternate universe stories from various fandoms.</p>
+
+            <div class="fanfic-container">
+                <!-- Comic 1 -->
+                <div class="fanfic-card">
+                    <img src="images/tumblr_306201639c4de8e8854c680086f34afd_eb9b0363_1280.jpg" alt="Urban Jungle Cover" class="comic-img">
+                    <h3>Urban Jungle</h3>
+                    <p>
+                        Season-3-rewrite AU's version of Urban Jungle into a three-chapter fan-webcomic. Two pages are posted every Friday to allow time for the next chapters.<br><br>
+                        This is intended as a close retelling of the original episode that follows all major plot beats, 
+                        but Danielle's presence spices things up with original sequences and modified canon scenes.<br><br>
+                        Danny is suffering from an odd cold when Undergrowth, a powerful plant ghost, conquers Amity Park 
+                        and enslaves his friends and family. To make matters worse, Danny's annoying rival—the daughter of his arch enemy—is the only other one left standing. 
+                        For once, the eerily similar ghost kids have a shared goal, but is Amity Park big enough for both of them?
+                    </p>
+                </div>
+
+                <!-- Comic 2 -->
+                <div class="fanfic-card">
+                    <img src="images/tumblr_546a55bb87eb46ec31713f95540bc575_84cd858c_1280.jpg" alt="Steven Universe: The Movie Alternate Cut Cover" class="comic-img">
+                    <h3>Steven Universe: The Movie Alternate Cut</h3>
+                    <p>Comic based on a “What If” scenario of the Steven Universe Movie!</p>
+                </div>
+
+                <!-- Comic 3 -->
+                <div class="fanfic-card">
+                    <img src="images/aedf21310a0d3160a64e3feeb796ae9c.jpg" alt="Steven Universe: Gone Wrong Chapter Three Cover" class="comic-img">
+                    <h3>Steven Universe: Gone Wrong Chapter Three</h3>
+                    <p>
+                        Alternate universe fancomic exploring what would happen if Spinel's Rejuvenator inflicted damage on Steven and killed him. 
+                        Pink Steven appears in his place and poofs Spinel before she can do anything else. 
+                        The remaining Crystal Gems and Pink Steven must go through the events of Steven Universe: The Movie, 
+                        with the repercussions of Steven's death affecting the entire situation.
+                    </p>
+                </div>
+
+                <!-- Comic 4 -->
+                <div class="fanfic-card">
+                    <img src="images/tumblr_54d3f3c961f7037514bef9527b10d5f0_7a3260ad_1280.jpg" alt="Owl House Comic Cover 1" class="comic-img">
+                    <h3>Owl House Comic</h3>
+                    <p>Fancomic based on Owl House.</p>
+                </div>
+
+                <!-- Comic 5 -->
+                <div class="fanfic-card">
+                    <img src="images/tumblr_56cba2f04825882d74bf42a23fe21540_2be1a9cc_1280.jpg" alt="Owl House Comic Cover 2" class="comic-img">
+                    <h3>Owl House Comic</h3>
+                    <p>Fancomic based on Owl House.</p>
+                </div>
+
+                <!-- Comic 6 -->
+                <div class="fanfic-card">
+                    <img src="images/tumblr_89b50dad34decd6d0d36a253963670df_c85cda20_1280.jpg" alt="Owl House Comic Cover 3" class="comic-img">
+                    <h3>Owl House Comic</h3>
+                    <p>Fancomic based on Owl House.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: <a href="mailto:dnguyen64@student.clayton.edu">dnguyen64@student.clayton.edu</a></p>
+        <p>Assignment Due Date:  November 16, 2025</p>
+    </footer>
+</body>
+</html>

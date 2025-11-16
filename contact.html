@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Damin Nguyen">
+    <meta name="description" content="Fanfic Folio – a creative fandom platform featuring fanfiction, comics, art, and community content. Keywords: fanfiction, comics, digital art, fandom, FIC, creative media.">
+
+    <title>Fanfic Folio - Contact Us</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Nanum+Gothic:wght@400;700&display=swap">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Fanfic Folio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Browse</a></li>
+                <li><a href="fanfiction.html">Fanfiction</a></li>
+                <li><a href="comics.html">Comics</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="#">Creators</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="contact.html">About / Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Join the Community or Send Us Feedback!</h2>
+        <p>We’d love to hear from you! Fill out the form below to create an account, sign up for updates, or share your thoughts.</p>
+
+        <form action="#" method="post" class="contact-form">
+            <!-- Personal Info -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+            </fieldset>
+
+            <!-- Interests -->
+            <fieldset>
+                <legend>Fandom Interests</legend>
+
+                <label for="fandom">Favorite Fandom:</label>
+                <select id="fandom" name="fandom">
+                    <option value="">--Select--</option>
+                    <option value="svtfoe">Star vs. the Forces of Evil</option>
+                    <option value="stevenuniverse">Steven Universe</option>
+                    <option value="theloudhouse">The Loud House</option>
+                    <option value="crossover">Crossover Projects</option>
+                </select><br><br>
+
+                <p>Preferred Content Type:</p>
+                <input type="radio" id="fanfiction" name="content" value="fanfiction">
+                <label for="fanfiction">Fanfiction</label><br>
+                <input type="radio" id="comics" name="content" value="comics">
+                <label for="comics">Comics</label><br>
+                <input type="radio" id="art" name="content" value="art">
+                <label for="art">Art</label>
+            </fieldset>
+
+            <!-- Feedback -->
+            <fieldset>
+                <legend>Feedback</legend>
+                <label for="message">Your Message or Feedback:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40" placeholder="Tell us what you think..."></textarea><br><br>
+
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Sign me up for the newsletter!</label><br><br>
+            </fieldset>
+
+            <input type="submit" value="Submit Form">
+        </form>
+    </main>
+
+    <footer>
+        <p>Contact: <a href="mailto:dnguyen64@student.clayton.edu">dnguyen64@student.clayton.edu</a></p>
+        <p>Assignment Due Date:  November 16, 2025</p>
+    </footer>
+</body>
+</html>
